@@ -15,6 +15,12 @@ export default function middleware(request) {
     const country =
       request.geo?.country || request.headers.get("x-vercel-ip-country");
 
+    console.log("Detected Country:", country);
+    console.log(
+      "X-Vercel-IP-Country Header:",
+      request.headers.get("x-vercel-ip-country"),
+    );
+
     // Determine preferred language (default to 'en')
     const acceptLanguage = request.headers.get("accept-language") || "";
     const preferredLang = acceptLanguage.includes("ar") ? "ar" : "en";
