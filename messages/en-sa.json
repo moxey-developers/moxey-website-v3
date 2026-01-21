@@ -1,0 +1,55 @@
+{
+  "NavBar": {
+    "localeSwitcher": {
+      "en-US": "English",
+      "ar-AE": "United Arab Emirates"
+    },
+    "navLinks": {
+      "about us": "about us",
+      "products": "products",
+      "resources": "resources",
+      "contact us": "contact us"
+    },
+    "navActionBtn": "log in"
+  },
+  "HomePage": {
+    "HeroSection": {
+      "title": {
+        "t1": "redefining",
+        "t2": "finance",
+        "t3": "for the",
+        "t4": "modern mobility industry"
+      },
+      "titleDescription": "Seamless payments, real-time tracking, and expense management solutions built to drive efficiency and growth in logistics.",
+      "actionBtn": "Get a free demo"
+    },
+    "SectionTwo": {
+      "title": "Our Mission & Vision",
+      "content": "MoXey provides the mobility and logistics sectors in MENA with a tech platform for banking and payments. From truck drivers to public companies, businesses can use Moxey to accept payments and manage financial operations seamlessly. Guided by innovation and excellence, we empower businesses to thrive."
+    },
+    "SectionThird": {
+      "badge": "our products",
+      "title": "MoXey financial solutions for mobility & logistics",
+      "pay": {
+        "title": "Cashless Payments and Instant Settlements",
+        "content": "Experience fast, hassle-free payments and settlements with card-based solutions designed for fleet owners. Streamline fuel, driver, and vendor transactions, ensuring smooth financial management and efficient operations, wherever your business takes you."
+      },
+      "scf": {
+        "title": "Optimize Capital in 24 Hours",
+        "content": "Logistics providers face cash-flow challenges. Quickly optimize working capital and strengthen supplier relationships with SCF."
+      },
+      "leasing": {
+        "title": "Promote Microentrepreneurship",
+        "content": "Many drivers lack access to traditional banking. We offer easy financing to help them own assets and secure their future."
+      },
+      "bnpl": {
+        "title": "Consumer Financing for Suppliers",
+        "content": "Get approved for credit, shop at partner stores, and improve your credit score by making timely payments."
+      },
+      "factoring": {
+        "title": "Invoice Factoring for Suppliers",
+        "content": "Transporters receive upfront payments for supplier invoices, ensuring steady cash flow while we handle collections."
+      }
+    }
+  }
+}

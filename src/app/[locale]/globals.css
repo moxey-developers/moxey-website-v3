@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-playfair: var(--font-playfair-serif);
+  --font-inter: var(--font-inter-sans);
+
+  --color-mx-green: #22b470;
+  --color-mx-gray: #f9f9f9;
+  --color-mx-gray-20: #494c4e;
+}
+
+@utility hero-grid {
+  background-image: url("/hero-grid-1.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+@utility hero-grid-mobile {
+  background-image: url("/hero-grid.png");
+  background-size: fill;
+  background-position: center center;
+}
+
+@utility aboutus-bg {
+  background-image: url("/about-us-bg.png");
+  background-size: fill;
+  background-position: center center;
+}
+
+@utility bg-grid-footer {
+  background-image: url("/footer-grid.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@utility hover-effect-1 {
+  @apply hover:scale-110 transition-transform duration-300 ease-in-out hover:text-mx-green;
+}
+
+@utility hover-effect {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+@utility custom-cursor {
+  cursor: url("/cursor.png"), auto;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-inter-sans);
+    cursor: url("/cursor.png"), auto;
+  }
+
+  /* Webkit (Chrome, Safari, newer versions of Opera) */
+  *::-webkit-scrollbar {
+    @apply w-3 bg-transparent;
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded-full;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-full border-4 border-solid border-gray-100 hover:bg-gray-500 transition-colors duration-300;
+  }
+
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme("colors.gray.400") theme("colors.gray.100");
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
